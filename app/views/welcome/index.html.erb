@@ -10,7 +10,14 @@
   </header>
 
   <main>
-    <p>Enter your vehicle details below and search across all of the major parts stores at once!</a>.</p>
+    <p>Enter your vehicle details below and search across all of the major parts stores at once!</a></p>
+
+    <select name="year" id="year">
+      <option value="Year">Year</option>
+      <% 1930.upto(Date.today.year) do |year| %>
+        <option value=<%=year%>><%=year%></option>
+      <% end %>
+    </select>
   </main>
 
   <footer>
